@@ -1,0 +1,140 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2.5rem;
+  height: 68px;
+  background: var(--forest);
+  transition: box-shadow 0.3s;
+}
+
+.navbar--scrolled {
+  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.35);
+}
+
+.navbar__logo {
+  font-family: 'Playfair Display', serif;
+  color: var(--parchment);
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.navbar__logo span {
+  color: var(--amber);
+}
+
+.navbar__links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.navbar__link {
+  background: none;
+  border: none;
+  color: var(--parchment);
+  font-family: 'Lato', sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.2s, color 0.2s;
+  padding: 0;
+}
+
+.navbar__link:hover {
+  opacity: 1;
+  color: var(--amber);
+}
+
+.navbar__cta {
+  background: var(--amber);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.3rem;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.navbar__cta:hover {
+  background: var(--amber-dark);
+}
+
+.navbar__burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.navbar__burger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--parchment);
+  border-radius: 2px;
+}
+
+.navbar__mobile {
+  position: absolute;
+  top: 68px;
+  left: 0;
+  right: 0;
+  background: var(--forest);
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 2rem;
+  gap: 1rem;
+  border-top: 1px solid rgba(237, 229, 208, 0.1);
+}
+
+.navbar__mobile-link {
+  background: none;
+  border: none;
+  color: var(--parchment);
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: left;
+  padding: 0.3rem 0;
+  opacity: 0.85;
+}
+
+.navbar__cta--mobile {
+  margin-top: 0.5rem;
+  width: fit-content;
+}
+
+@media (max-width: 768px) {
+  .navbar__links,
+  .navbar__cta:not(.navbar__cta--mobile) {
+    display: none;
+  }
+
+  .navbar__burger {
+    display: flex;
+  }
+
+  .navbar {
+    padding: 0 1.5rem;
+  }
+}

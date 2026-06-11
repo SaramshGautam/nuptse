@@ -1,0 +1,29 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --forest: #1C2E1E;
+  --forest-light: #2E4A31;
+  --amber: #C8721A;
+  --amber-dark: #9A5510;
+  --parchment: #EDE5D0;
+  --stone: #4A4A3F;
+  --cream: #F7F2E8;
+  --muted-green: #8aaa8c;
+  --muted-text: #a8b8a9;
+  --ink: #111a12;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: var(--cream);
+  color: var(--stone);
+  -webkit-font-smoothing: antialiased;
+}
