@@ -1,0 +1,92 @@
+<svg width="400" height="400" viewBox="0 0 400 400" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>Nuptse Brewing Co. Logo</title>
+  <desc>Circular badge logo with Himalayan mountain illustration and hop vines for Nuptse Brewing Co., Kathmandu, Nepal.</desc>
+
+  <defs>
+    <clipPath id="badgeClip">
+      <circle cx="200" cy="200" r="162"/>
+    </clipPath>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Lato:wght@400;700&amp;display=swap');
+    </style>
+  </defs>
+
+  <!-- Outer rings -->
+  <circle cx="200" cy="200" r="185" fill="#1C2E1E"/>
+  <circle cx="200" cy="200" r="175" fill="none" stroke="#C8721A" stroke-width="2.5"/>
+  <circle cx="200" cy="200" r="165" fill="none" stroke="#C8721A" stroke-width="0.8"/>
+
+  <!-- Inner cream fill -->
+  <circle cx="200" cy="200" r="162" fill="#EDE5D0"/>
+
+  <g clip-path="url(#badgeClip)">
+    <!-- Sky -->
+    <rect x="38" y="38" width="324" height="324" fill="#EDE5D0"/>
+
+    <!-- Mountains back -->
+    <polygon points="38,240 120,130 170,200 230,110 290,170 330,100 362,220 362,280 38,280" fill="#2E4A31" opacity="0.35"/>
+
+    <!-- Mountains mid -->
+    <polygon points="38,260 100,210 150,250 200,90 250,210 300,180 362,250 362,290 38,290" fill="#2E4A31" opacity="0.6"/>
+
+    <!-- Mountains front — Nuptse peak at center -->
+    <polygon points="38,280 110,230 160,265 200,120 240,230 300,200 362,255 362,310 38,310" fill="#1C2E1E"/>
+
+    <!-- Snow caps -->
+    <polygon points="190,120 200,90 210,120 205,125 195,125" fill="#EDE5D0" opacity="0.9"/>
+    <polygon points="293,193 300,180 307,193 303,197 297,197" fill="#EDE5D0" opacity="0.7"/>
+    <polygon points="153,263 160,250 167,263 163,267 157,267" fill="#EDE5D0" opacity="0.5"/>
+
+    <!-- Ground -->
+    <rect x="38" y="285" width="324" height="90" fill="#1C2E1E"/>
+
+    <!-- Hop vine left -->
+    <path d="M70,295 C80,255 100,230 120,210" fill="none" stroke="#C8721A" stroke-width="1.5"/>
+    <ellipse cx="88" cy="262" rx="10" ry="7" fill="#C8721A" opacity="0.85" transform="rotate(-30,88,262)"/>
+    <ellipse cx="105" cy="238" rx="9" ry="6" fill="#C8721A" opacity="0.85" transform="rotate(-45,105,238)"/>
+    <ellipse cx="92" cy="252" rx="7" ry="5" fill="#9A5510" opacity="0.6" transform="rotate(-20,92,252)"/>
+
+    <!-- Hop vine right -->
+    <path d="M330,295 C320,255 300,230 280,210" fill="none" stroke="#C8721A" stroke-width="1.5"/>
+    <ellipse cx="312" cy="262" rx="10" ry="7" fill="#C8721A" opacity="0.85" transform="rotate(30,312,262)"/>
+    <ellipse cx="295" cy="238" rx="9" ry="6" fill="#C8721A" opacity="0.85" transform="rotate(45,295,238)"/>
+    <ellipse cx="308" cy="252" rx="7" ry="5" fill="#9A5510" opacity="0.6" transform="rotate(20,308,252)"/>
+
+    <!-- Rule above wordmark -->
+    <line x1="140" y1="298" x2="260" y2="298" stroke="#C8721A" stroke-width="1.2"/>
+
+    <!-- Wordmark -->
+    <text x="200" y="328" text-anchor="middle" fill="#EDE5D0"
+      font-family="'Playfair Display', Georgia, serif"
+      font-size="28" font-weight="700" letter-spacing="3">NUPTSE</text>
+    <text x="200" y="348" text-anchor="middle" fill="#C8721A"
+      font-family="'Lato', Arial, sans-serif"
+      font-size="10" font-weight="700" letter-spacing="5">BREWING CO.</text>
+
+    <!-- Rule below wordmark -->
+    <line x1="145" y1="357" x2="255" y2="357" stroke="#C8721A" stroke-width="1.2"/>
+
+    <!-- Tagline -->
+    <text x="200" y="370" text-anchor="middle" fill="#4A4A3F"
+      font-family="'Lato', Arial, sans-serif"
+      font-size="8" letter-spacing="3">KATHMANDU · NEPAL</text>
+  </g>
+
+  <!-- Arc text top -->
+  <path id="topArc" d="M 60,200 A 140,140 0 0,1 340,200" fill="none"/>
+  <text font-family="'Lato', Arial, sans-serif" font-size="10" font-weight="700" fill="#C8721A" letter-spacing="5">
+    <textPath href="#topArc" startOffset="12%">CRAFT · HIMALAYAN · SPIRIT</textPath>
+  </text>
+
+  <!-- Arc text bottom -->
+  <path id="botArc" d="M 65,215 A 136,136 0 0,0 335,215" fill="none"/>
+  <text font-family="'Lato', Arial, sans-serif" font-size="9" fill="#4A4A3F" letter-spacing="3">
+    <textPath href="#botArc" startOffset="18%">EST. 2026 · KATHMANDU</textPath>
+  </text>
+
+  <!-- Decorative dots on ring -->
+  <circle cx="200" cy="15" r="3" fill="#C8721A"/>
+  <circle cx="200" cy="385" r="3" fill="#C8721A"/>
+  <circle cx="15" cy="200" r="3" fill="#C8721A"/>
+  <circle cx="385" cy="200" r="3" fill="#C8721A"/>
+</svg>

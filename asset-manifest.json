@@ -1,13 +1,20 @@
 {
   "files": {
-    "main.css": "/nuptse/static/css/main.4cde7ce2.css",
-    "main.js": "/nuptse/static/js/main.013cb39e.js",
+    "main.css": "/nuptse/static/css/main.043b18e8.css",
+    "main.js": "/nuptse/static/js/main.fee2a0d4.js",
+    "static/media/NuptseBrewingCo-logo.svg": "/nuptse/static/media/NuptseBrewingCo-logo.cc829f2cb20f0cd18a1c6ec7441720fc.svg",
+    "static/media/DoubleIPA.svg": "/nuptse/static/media/DoubleIPA.fbcae92d1d04520f1f94bd932c83eec9.svg",
+    "static/media/OatmealStout.svg": "/nuptse/static/media/OatmealStout.c1b925747795a313f69e759eee5d7470.svg",
+    "static/media/AmberAle.svg": "/nuptse/static/media/AmberAle.e0488964256fa896beab8ca52c15d733.svg",
+    "static/media/AmericanPaleAle.svg": "/nuptse/static/media/AmericanPaleAle.bf7993c1644b3e4d72246cc2ed89cffd.svg",
+    "static/media/PremierLager.svg": "/nuptse/static/media/PremierLager.285c4b76ae3ff3e983ad2509f89e4af8.svg",
+    "static/media/NewEnglandIPA.svg": "/nuptse/static/media/NewEnglandIPA.3d638713f59cd447ce52eea0e20adbbe.svg",
     "index.html": "/nuptse/index.html",
-    "main.4cde7ce2.css.map": "/nuptse/static/css/main.4cde7ce2.css.map",
-    "main.013cb39e.js.map": "/nuptse/static/js/main.013cb39e.js.map"
+    "main.043b18e8.css.map": "/nuptse/static/css/main.043b18e8.css.map",
+    "main.fee2a0d4.js.map": "/nuptse/static/js/main.fee2a0d4.js.map"
   },
   "entrypoints": [
-    "static/css/main.4cde7ce2.css",
-    "static/js/main.013cb39e.js"
+    "static/css/main.043b18e8.css",
+    "static/js/main.fee2a0d4.js"
   ]
 }
