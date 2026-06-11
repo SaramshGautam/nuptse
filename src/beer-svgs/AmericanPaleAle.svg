@@ -1,0 +1,22 @@
+<svg viewBox="0 0 220 200" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>American Pale Ale</title>
+  <rect width="220" height="200" fill="#0d1f0f"/>
+  <polygon points="78,25 142,25 152,170 68,170" fill="none" stroke="#C8A84B" stroke-width="1.5"/>
+  <polygon points="80,48 140,48 150,165 70,165" fill="#C8860A" opacity="0.9"/>
+  <circle cx="102" cy="120" r="2.5" fill="#F0A830" opacity="0.5"/>
+  <circle cx="118" cy="100" r="2" fill="#F0A830" opacity="0.5"/>
+  <circle cx="110" cy="140" r="2" fill="#F0A830" opacity="0.4"/>
+  <circle cx="125" cy="115" r="1.5" fill="#F0A830" opacity="0.5"/>
+  <ellipse cx="110" cy="48" rx="32" ry="11" fill="#F5F0E0"/>
+  <ellipse cx="92" cy="44" rx="14" ry="9" fill="#FFF9F0"/>
+  <ellipse cx="122" cy="43" rx="16" ry="10" fill="#FFF9F0"/>
+  <ellipse cx="108" cy="40" rx="12" ry="8" fill="white"/>
+  <line x1="86" y1="55" x2="82" y2="160" stroke="white" stroke-width="2" opacity="0.15"/>
+  <circle cx="155" cy="60" r="8" fill="#4A6B3A"/>
+  <circle cx="153" cy="58" r="3" fill="#5A7A48"/>
+  <circle cx="158" cy="63" r="3" fill="#3A5B2A"/>
+  <rect x="90" y="85" width="40" height="48" rx="2" fill="#1C2E1E" opacity="0.8"/>
+  <text x="110" y="101" text-anchor="middle" font-family="Georgia,serif" font-size="6.5" fill="#C8721A" font-weight="700">NUPTSE</text>
+  <text x="110" y="112" text-anchor="middle" font-family="Arial,sans-serif" font-size="4.5" fill="#EDE5D0" letter-spacing="1">PALE ALE</text>
+  <text x="110" y="123" text-anchor="middle" font-family="Arial,sans-serif" font-size="6" fill="#C8A84B">★★★</text>
+</svg>

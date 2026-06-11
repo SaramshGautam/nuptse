@@ -1,27 +1,38 @@
-import React from 'react';
-import './Hero.css';
+import React from "react";
+import "./Hero.css";
+import Logo from "../NuptseBrewingCo-logo.svg";
 
 export default function Hero() {
   const scrollTo = (id) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
     <section className="hero" id="hero">
       <div className="hero__content">
-        <p className="hero__eyebrow">Kathmandu, Nepal &nbsp;·&nbsp; Est. 2026</p>
+        <img src={Logo} alt="Nuptse Brewing Co." className="hero__logo" />
+
+        <p className="hero__eyebrow">
+          Kathmandu, Nepal &nbsp;·&nbsp; Est. 2026
+        </p>
         <h1 className="hero__title">
           Brewed in the shadow of <em>the giants</em>
         </h1>
         <p className="hero__sub">
-          Craft beer rooted in Himalayan spirit. Small batch. Honest ingredients.
-          Shared around long tables under open skies.
+          Craft beer rooted in Himalayan spirit. Small batch. Honest
+          ingredients. Shared around long tables under open skies.
         </p>
         <div className="hero__btns">
-          <button className="hero__btn hero__btn--primary" onClick={() => scrollTo('menu')}>
+          <button
+            className="hero__btn hero__btn--primary"
+            onClick={() => scrollTo("menu")}
+          >
             Explore Our Beers
           </button>
-          <button className="hero__btn hero__btn--outline" onClick={() => scrollTo('events')}>
+          <button
+            className="hero__btn hero__btn--outline"
+            onClick={() => scrollTo("events")}
+          >
             Upcoming Events
           </button>
         </div>

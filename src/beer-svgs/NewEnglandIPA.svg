@@ -1,0 +1,22 @@
+<svg viewBox="0 0 220 200" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>New England IPA</title>
+  <rect width="220" height="200" fill="#0d1f0f"/>
+  <polygon points="80,28 140,28 150,170 70,170" fill="none" stroke="#C8A84B" stroke-width="1.5"/>
+  <polygon points="82,50 138,50 148,165 72,165" fill="#D4720A" opacity="0.8"/>
+  <polygon points="82,50 138,50 148,165 72,165" fill="#F0A040" opacity="0.25"/>
+  <circle cx="100" cy="115" r="2" fill="#F0A040" opacity="0.4"/>
+  <circle cx="120" cy="95" r="2" fill="#F0A040" opacity="0.4"/>
+  <circle cx="112" cy="140" r="1.5" fill="#F0A040" opacity="0.3"/>
+  <ellipse cx="110" cy="50" rx="30" ry="13" fill="#F5F0E0"/>
+  <ellipse cx="92" cy="45" rx="15" ry="10" fill="#FFF9F0"/>
+  <ellipse cx="124" cy="44" rx="16" ry="11" fill="#FFF9F0"/>
+  <ellipse cx="108" cy="40" rx="14" ry="9" fill="white"/>
+  <ellipse cx="116" cy="37" rx="9" ry="7" fill="white"/>
+  <circle cx="158" cy="45" r="7" fill="#4A6B3A"/>
+  <circle cx="165" cy="52" r="6" fill="#5A7A48"/>
+  <circle cx="156" cy="53" r="4" fill="#3A5B2A"/>
+  <rect x="88" y="88" width="44" height="48" rx="2" fill="#1C2E1E" opacity="0.8"/>
+  <text x="110" y="104" text-anchor="middle" font-family="Georgia,serif" font-size="6" fill="#C8721A" font-weight="700">NUPTSE</text>
+  <text x="110" y="115" text-anchor="middle" font-family="Arial,sans-serif" font-size="4.5" fill="#EDE5D0" letter-spacing="0.5">NEW ENGLAND</text>
+  <text x="110" y="125" text-anchor="middle" font-family="Arial,sans-serif" font-size="4.5" fill="#EDE5D0" letter-spacing="0.5">IPA</text>
+</svg>

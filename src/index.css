@@ -1,17 +1,19 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 :root {
-  --forest: #1C2E1E;
-  --forest-light: #2E4A31;
-  --amber: #C8721A;
-  --amber-dark: #9A5510;
-  --parchment: #EDE5D0;
-  --stone: #4A4A3F;
-  --cream: #F7F2E8;
+  --forest: #1c2e1e;
+  --forest-light: #2e4a31;
+  --amber: #c8721a;
+  --amber-dark: #9a5510;
+  --parchment: #ede5d0;
+  --stone: #4a4a3f;
+  --cream: #f7f2e8;
   --muted-green: #8aaa8c;
   --muted-text: #a8b8a9;
   --ink: #111a12;
@@ -22,7 +24,7 @@ html {
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   background-color: var(--cream);
   color: var(--stone);
   -webkit-font-smoothing: antialiased;

@@ -1,77 +1,73 @@
 import React, { useState } from 'react';
 import './Menu.css';
 
+import PremierLager from '../beer-svgs/PremierLager.svg';
+import AmericanPaleAle from '../beer-svgs/AmericanPaleAle.svg';
+import OatmealStout from '../beer-svgs/OatmealStout.svg';
+import NewEnglandIPA from '../beer-svgs/NewEnglandIPA.svg';
+import AmberAle from '../beer-svgs/AmberAle.svg';
+import DoubleIPA from '../beer-svgs/DoubleIPA.svg';
+
 const beers = [
   {
-    name: 'Annapurna Amber',
-    style: 'Amber Ale',
-    cat: 'ale',
-    desc: 'Caramel malt warmth with a gentle floral hop finish. Our house staple — smooth enough for the first round, interesting enough for the fifth.',
-    abv: '5.2',
-    ibu: '28',
-  },
-  {
-    name: 'Yak Trail Lager',
-    style: 'Czech Pilsner',
-    cat: 'lager',
-    desc: 'Crisp, clean, and refreshing. Brewed with Saaz hops and a long cold conditioning. The mountain thirst-quencher.',
+    name: 'Premier Lager',
+    style: 'Czech-Style Lager',
+    cat: 'core',
+    desc: 'Crisp, clean and endlessly drinkable. Cold-conditioned with Saaz hops for a refreshing finish that pairs perfectly with the Kathmandu sun.',
     abv: '4.8',
-    ibu: '22',
+    ibu: '18',
+    img: PremierLager,
   },
   {
-    name: 'Sherpa Stout',
-    style: 'Dry Stout',
-    cat: 'ale',
-    desc: 'Dark as a starless Himalayan night. Roasted barley, dark chocolate, and a dry, clean finish.',
+    name: 'American Pale Ale',
+    style: 'American Pale Ale',
+    cat: 'core',
+    desc: 'Bright citrus and pine hop aroma balanced by a biscuit malt backbone. Our everyday crowd-pleaser.',
+    abv: '5.2',
+    ibu: '35',
+    img: AmericanPaleAle,
+  },
+  {
+    name: 'Oatmeal Stout',
+    style: 'Oatmeal Stout',
+    cat: 'core',
+    desc: 'Silky smooth with notes of dark chocolate, roasted coffee and a creamy oat finish. Rich but surprisingly easy drinking.',
     abv: '5.6',
-    ibu: '38',
-  },
-  {
-    name: 'Boudha Wit',
-    style: 'Belgian Witbier',
-    cat: 'ale',
-    desc: 'Brewed with coriander and dried mandarin peel. Hazy, golden, and gently spiced — the perfect garden beer.',
-    abv: '4.5',
-    ibu: '14',
-  },
-  {
-    name: 'Monsoon Wheat',
-    style: 'Hefeweizen',
-    cat: 'seasonal',
-    desc: 'Our summer seasonal. Banana and clove esters from Bavarian yeast, brewed to welcome the rain.',
-    abv: '5.1',
-    ibu: '16',
-  },
-  {
-    name: 'High Camp IPA',
-    style: 'West Coast IPA',
-    cat: 'ale',
-    desc: 'Resinous pine and citrus hops balanced by a firm biscuit malt backbone. Bold, not brutal.',
-    abv: '6.4',
-    ibu: '55',
-  },
-  {
-    name: 'Timal Pale',
-    style: 'Session Pale Ale',
-    cat: 'ale',
-    desc: 'Light-bodied, aromatic, easy-drinking. Named after the Himalayan raspberry — expect a subtle fruit brightness.',
-    abv: '3.9',
-    ibu: '25',
-  },
-  {
-    name: 'Winter Solstice Porter',
-    style: 'Baltic Porter',
-    cat: 'seasonal',
-    desc: 'Our cold-weather release. Rich, dark, and warming — vanilla, dark fruit, and a silky finish.',
-    abv: '7.2',
     ibu: '32',
+    img: OatmealStout,
+  },
+  {
+    name: 'New England IPA',
+    style: 'Hazy IPA',
+    cat: 'seasonal',
+    desc: 'Thick, hazy and bursting with tropical fruit. Soft bitterness, big aroma. Limited batches — grab it while it\'s on.',
+    abv: '6.2',
+    ibu: '45',
+    img: NewEnglandIPA,
+  },
+  {
+    name: 'Amber Ale',
+    style: 'American Amber Ale',
+    cat: 'seasonal',
+    desc: 'Caramel malt warmth with a gentle floral hop finish. The perfect pour around the fire pit.',
+    abv: '5.4',
+    ibu: '28',
+    img: AmberAle,
+  },
+  {
+    name: 'Double IPA',
+    style: 'Imperial IPA',
+    cat: 'seasonal',
+    desc: 'Big, bold and unapologetically hoppy. Resinous pine and citrus over a firm malt base. Not for the faint-hearted.',
+    abv: '8.1',
+    ibu: '75',
+    img: DoubleIPA,
   },
 ];
 
 const tabs = [
-  { key: 'all', label: 'All' },
-  { key: 'lager', label: 'Lagers' },
-  { key: 'ale', label: 'Ales' },
+  { key: 'all',      label: 'All Beers' },
+  { key: 'core',     label: 'Always on Tap' },
   { key: 'seasonal', label: 'Seasonal' },
 ];
 
@@ -102,16 +98,20 @@ export default function Menu() {
         <div className="menu__grid">
           {filtered.map((b) => (
             <div className="beer-card" key={b.name}>
-              <p className="beer-card__style">{b.style}</p>
-              <h3 className="beer-card__name">{b.name}</h3>
-              <p className="beer-card__desc">{b.desc}</p>
-              <div className="beer-card__meta">
-                <span className="beer-card__tag">
-                  ABV <strong>{b.abv}%</strong>
+              <div className="beer-card__illustration">
+                <img src={b.img} alt={b.name} className="beer-card__img" />
+                <span className={`beer-card__badge ${b.cat === 'core' ? 'beer-card__badge--core' : 'beer-card__badge--seasonal'}`}>
+                  {b.cat === 'core' ? 'Always on Tap' : 'Seasonal'}
                 </span>
-                <span className="beer-card__tag">
-                  IBU <strong>{b.ibu}</strong>
-                </span>
+              </div>
+              <div className="beer-card__body">
+                <p className="beer-card__style">{b.style}</p>
+                <h3 className="beer-card__name">{b.name}</h3>
+                <p className="beer-card__desc">{b.desc}</p>
+                <div className="beer-card__meta">
+                  <span className="beer-card__tag">ABV <strong>{b.abv}%</strong></span>
+                  <span className="beer-card__tag">IBU <strong>{b.ibu}</strong></span>
+                </div>
               </div>
             </div>
           ))}
