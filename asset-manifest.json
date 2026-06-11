@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/nuptse/static/css/main.4cde7ce2.css",
+    "main.js": "/nuptse/static/js/main.013cb39e.js",
+    "index.html": "/nuptse/index.html",
+    "main.4cde7ce2.css.map": "/nuptse/static/css/main.4cde7ce2.css.map",
+    "main.013cb39e.js.map": "/nuptse/static/js/main.013cb39e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4cde7ce2.css",
+    "static/js/main.013cb39e.js"
+  ]
+}
